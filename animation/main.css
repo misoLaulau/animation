@@ -1,0 +1,74 @@
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+body {
+  font: 45px/58px 'Nixie One', cursive;
+  color: #999;
+  }
+.container {
+  margin: 400px auto 0 auto;
+  width: 60%;
+  text-align: center;
+  
+  }
+h1 {
+  font: 134px/200px 'Ewert', cursive;
+  color: #E0306D;
+  }
+
+.animate01 {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  }
+
+@-webkit-keyframes hinge {
+    0% {
+      animation-duration: 5s;
+      }
+      20%, 60% {
+      -webkit-transform: rotate(80deg); 
+      -webkit-animation-timing-function: ease-in-out;
+      transform: rotate(80deg); 
+      animation-timing-function: ease-in-out; 
+      }
+      40% {
+      -webkit-transform: rotate(60deg);
+      -webkit-animation-timing-function: ease-in-out;
+      transform: rotate(60deg); 
+      animation-timing-function: ease-in-out;
+      }
+      80% {
+      -webkit-transform: rotate(60deg) translateY(0);
+      opacity: 1;   
+      -webkit-animation-timing-function: ease-in-out;
+      transform: rotate(60deg) translateY(0); 
+      animation-timing-function: ease-in-out; 
+      }
+      100% {
+      -webkit-transform: translateY(700px);
+      transform: translateY(700px); 
+      opacity: 0;
+     
+      }
+  }
+
+.animate01 {
+  -webkit-animation-name: hinge;
+  animation-name: hinge;
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+
